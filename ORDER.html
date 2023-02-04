@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" type="text/css" href="ORDER.css">
+    <link rel="stylesheet" type="text/css" href="FOOTER.css">
+   <link rel="stylesheet" href="NAV.css">
+    <title>Navasakthi Textiles | Order Enquiry</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            Navasakthi Textiles
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="PRODUCTS.html">Products</a></li>
+            <li><a href="ORDER.html">Order Enquiry</a></li>
+            <li><a href="CONTACT.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <br><br><br>
+    <h1 style="color:gold;">Order Enquiry</h1>
+    <hr>
+    <div class="row">
+        <div class="column1">
+            <h2 style="color:gold;">Terms & Conditions For Orders</h2>
+            <ul style="color: white;">
+                <br>
+                <li>We accept orders from Tamilnadu, Pondicherry, Andhra, Telangana, Karnataka, and Kerala.</li><br>
+                <li>Customers of other states apart from Tamil Nadu and Pondicherry are asked to place their order
+                    atleast 1 month .</li><br>
+                 <li>Products will be dispatched only after your entire payment is confirmed</li><br>
+                <li>Delivery is done by third party agencies</li><br>
+                <li>Customers of other states can receive their parcels within 14 days from the time of their bill
+                    settlement.</li><br>
+                <li>Customers can also suggest their favourable transport agency for delivery, If they have.</li><br>
+                <li>Goods will be packed only in carboard boxes, following all precautionary safety measures</li><br>
+                <li>We do not take responsibility for any damages incurred or any delay made by transport</li><br>
+                <li>Thank you for choosing and supporting us</li>
+            </ul>
+        </div>
+        <div class="column2">
+            <h2 style="color: gold;">Steps To Place Order Enquiry And Payment Method</h2>
+            <p style="color: white;">
+                <br>
+                You can place your order enquiry by filling the below form. You must give your full
+                address and contact details correctly. Next You can place your order enquiry by clicking "Submit"
+                button.
+                On clicking "Submit", your order enquiry will be placed. As soon as we receive your order enquiry , we
+                will contact you within 24 hours to clarify your queries and tell you payment method, via mobile number
+                that you have given us earlier.
+        </div>
+    </div>
+    <div class="container">
+        <form target="_blank"    action="mailto:viswanathank315@gmail.com" method="POST">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname"> First Name :- </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="mobile"> Mobile :- </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="mobile" name="mobile" placeholder="Your mobile number..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country"> Full Address :- </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="address" name="address" placeholder="Your full address..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject"> Order Enquiry :- </label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="Enquiry" placeholder="Describe your order enquiry whether retail or wholesale. We will contact you soon..."
+                        style="height:200px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" name="Submit" value="Place Order Enquiry">
+            </div>
+        </form>
+    </div>
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h3>Navasakthi <span>Textiles</span></h3>
+
+            <p class="footer-links">
+                <a href="index.html">Home</a>
+                |
+                <a href="PRODUCTS.html">Products</a>
+                |
+                <a href="ORDER.html">Order Enquiry</a>
+                |
+                <a href="CONTACT.html">Contact us</a>
+            </p>
+
+            <p class="footer-company-name">Copyright © 2022 <strong>Navasakthi Textiles</strong> All rights reserved</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>ERODE</span>
+                    TAMIL NADU</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>9486937161</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:viswanathank315@gmail.com">viswanathank315@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                
+            </p>
+        </div>
+    </footer>
+    <script>
+        (function () {
+            "use strict";
+            $("table").on("change", "input", function () {
+                var row = $(this).closest("tr");
+                var qty = parseFloat(row.find(".qty").val());
+                var price = parseFloat(row.find(".price").val());
+                var total = qty * price;
+                row.find(".total").val(isNaN(total) ? "" : total);
+            });
+        })();
+    </script>
+</body>
+
+</html>
